@@ -1,0 +1,72 @@
+.questionary {
+    background: url(../images/questionnaire-bg.png) repeat;
+}
+
+.questionary-title-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.questionary-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.questionary-input {
+    padding: 1rem 2rem;
+    border: 1px solid #CCCCCC;
+    margin: 1rem 0 0 0;
+}
+
+.questionary-input::placeholder {
+    text-transform: none;
+}
+
+.questionary-input:focus {
+    border: 1px solid #00A0DC;
+}
+
+.correct {
+    background: url('../images/icon-apply.png') no-repeat 97% 50%;
+}
+
+.empty {
+    background: url('../images/icon-empty.png') no-repeat 97% 50%;
+}
+
+.input-checkbox {
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: 1px solid #CCCCCC;
+    padding: 1rem 2rem;
+    color: #C4C4C4;
+}
+
+.input-text {
+    color: #C4C4C4;
+    border-bottom: 1px solid #acacac;
+    padding: 1rem 0;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.container-checkbox {
+    margin: 1rem 0 0 0;
+    width: 50%;
+}
+
+.container-checkbox div {
+    margin: 0 1rem 0 0;
+}

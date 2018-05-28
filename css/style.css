@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "MyRiadPro Regular";
+    src: url('../fonts/MyriadPro-Regular.ttf')
+}
+
+@font-face {
+    font-family: "MyRiadPro Bold";
+    src: url('../fonts/MyriadPro-Bold.ttf');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "MyRiadPro Regular", serif;
+    vertical-align: baseline;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10%;
+    max-width: 1280px;
+}
+
+.header {
+    background: #505866;
+    padding: 1rem;
+    border-bottom: 1px solid #505866;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-button--active {
+    color: #BABABA;
+    background: #3a4049 url('../images/header-top-button.png') no-repeat center left /cover;
+}
+
+.header-title {
+    font-family: "MyRiadPro Regular", sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header-content {
+    background: #4a515d;
+}
+
+.header-content-container {
+    padding-top: 4rem;
+}
+
+.header-title {
+    font-family: "MyRiadPro Bold";
+    font-size: 2.3rem;
+    font-weight: 100;
+    max-width: 55%;
+}
+
+.header-img-container {
+    margin-top: 3rem;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header-content-footer {
+    background: #4a515d;
+}
+
+.header-content-low {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header-title--grey {
+    color: #C4C2C2;
+    font-size: 1.7rem;
+    max-width: 47%;
+}
+
+.header-low-button {
+    background: url('../images/button-header-bg.png') no-repeat center center /cover;
+    border: none;
+    color: #9cefec;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "MyRiadPro Regular";
+    padding: 1.05rem 2.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.devices-title-container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.golden-title {
+    font-family: "MyRiadPro Bold";
+    font-weight: normal;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #a6895c;
+}
+
+.devices-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.devices-item {
+    text-align: center;
+    flex: 1;
+}
+
+.devices-img {
+    margin: 0 0 2rem 0;
+}
+
+.devices-text {
+    font-family: "MyRiadPro Bold";
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.devices-subinfo {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devices-subtitle-container {
+    flex: 1;
+    text-align: right;
+}
+
+.devices-button-container {
+    flex: 1;
+}
+
+.devices-subtitle {
+    font-size: 2rem;
+}
+
+.button {
+    padding: 1.5rem 1rem;
+    border: none;
+    background: #6796e9;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.devices-button {
+    margin: 0 2rem;
+}
+
+.button:hover {
+    background: #3463B6;
+}
+
+.form {
+    background: #464d59 url('../images/map-image.png') no-repeat bottom right;
+    height: 700px;
+    padding-bottom: 5rem;
+}
+
+.form-info {
+    color: white;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 3rem;
+    font-family: "MyRiadPro Bold";
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 3rem 0 1rem 0;
+}
+
+.form-subtitle {
+    font-size: 2.2rem;
+}
+
+.form-contacts {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1rem 0 0 0;
+}
+
+.contacts-text {
+    color: #97989A;
+}
+
+.form-main {
+    display: flex;
+}
+
+.inputs-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.input {
+    margin: 2rem 0 0 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.inputs-button {
+    margin: 2rem 0 0 50%;
+    width: 50%;
+
+}
+
+.input::placeholder {
+    color: #C4C4C4;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
