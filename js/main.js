@@ -155,3 +155,5 @@ const onSubmit = (event) => {
         document.getElementsByClassName('text-error')[0].classList.remove('display');
     }
 }
+
+console.log(window.location.href);
