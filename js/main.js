@@ -72,8 +72,9 @@ const checkCheckboxes = () => {
 
 
 $(function () {
-    checkCheckboxes();
-
+    checkCheckboxes();  
+    $('input').val('') ;
+    $('textarea').val('');
     $('.iCheck-helper').click(function () {
         checkCheckboxes();
 
@@ -100,6 +101,7 @@ const isValidText = (input) => {
 const cleanInput = (input) => {
     if (input.value === 'Value of this field should be valid') {
         input.value = '';
+        input.classList.remove('input-error');
     }
 }
 

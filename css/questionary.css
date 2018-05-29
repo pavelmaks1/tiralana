@@ -83,3 +83,57 @@
 .checkbox-group-correct {
     background: url('../images/icon-apply.png') no-repeat 97% 10%;
 }
+
+.questionary-input:nth-of-type(1):focus {
+    background: white url('../images/company-name.svg') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(2):focus {
+    background: white url('../images/label-1.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(3):focus {
+    background: white url('../images/label-2.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(4):focus {
+    background: white url('../images/label-3.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(5):focus {
+    background: white url('../images/label-4.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(6):focus {
+    background: white url('../images/label-5.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(7):focus {
+    background: white url('../images/label-6.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(8):focus {
+    background: white url('../images/label-7.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
+
+.questionary-input:nth-of-type(9):focus {
+    background: white url('../images/label-8.png') no-repeat 4% 16%;
+    padding: 1.4rem 1.75rem 1rem 1.75rem;
+    background-size: 13%;
+}
