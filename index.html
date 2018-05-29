@@ -89,18 +89,28 @@
             </div>
             <form class="form-main">
                 <div class="inputs-group">
-                    <input type="text" class="input" placeholder="Name, Surname *">
-                    <input type="text" class="input" placeholder="Company name *">
-                    <input type="email" class="input" placeholder="Email *">
-                    <input type="text" class="input" placeholder="Phone number *">
+                    <p class="text-error display">Please fix the following errors:</p>
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input inputs-item" >
+
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" >
+
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="email" class="input  inputs-item" >
+
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" >
+
                 </div>
                 <div class="inputs-group inputs-textarea-group">
-                    <textarea type="text" class="input input-text-area" placeholder="Your message"></textarea>
-                    <button class="button inputs-button">Send Message</button>
+                    <textarea onclick="cleanInput(this)" type="text" onchange="isValidText(this)" class="input input-text-area" ></textarea>
+                    <button onclick="onSubmit(event)" class="button inputs-button">Send Message</button>
                 </div>
             </form>
+            <div class="form-thanks form-thanks--display display ">
+                <p class="thanks-text">Thank you for contacting us. We will respond to you as soon as possible.</p>
+            </div>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

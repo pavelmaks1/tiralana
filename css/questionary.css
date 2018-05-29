@@ -71,19 +71,15 @@
     margin: 0 1rem 0 0;
 }
 
-.form-thanks {
-    margin-top: 1rem;
-    background: #a6895c;
-    border-radius: 5px;
-    padding: 1rem 5rem;
-    text-align: center;
-}
-
-.thanks-text {
-    color: white;
-}
-
 .form-button {
     width: 50%;
     margin: 1rem auto;
+}
+
+.checkbox-group-empty {
+    background: url('../images/icon-empty.png') no-repeat 97% 10%;
+}
+
+.checkbox-group-correct {
+    background: url('../images/icon-apply.png') no-repeat 97% 10%;
 }

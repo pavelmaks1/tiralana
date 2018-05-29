@@ -39,14 +39,14 @@
         <div class="questionary-main">
             <div class="container">
                 <form action="" class="questionary-form">
-                    <input type="text" class="input questionary-input empty" placeholder="Country/Region of Head office">
-                    <input type="text" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
-                    <input type="text" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
-                    <input type="text" class="input questionary-input empty" placeholder="Name">
-                    <input type="text" class="input questionary-input empty" placeholder="Telephone number">
-                    <input type="text" class="input questionary-input empty" placeholder="Web site">
-                    <input type="text" class="input questionary-input empty" placeholder="Number of emploees">
-                    <div class="input-checkbox">
+                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Country/Region of Head office">
+                    <input type="text" onblur="isValidEmail(this)" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
+                    <input type="text" onchange="isValidCity" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
+                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Name">
+                    <input type="text" onchange="isValidTelephoneNumber(this)" class="input questionary-input empty" placeholder="Telephone number">
+                    <input type="text" onchange="isValidDomainName(this)" class="input questionary-input empty" placeholder="Web site">
+                    <input type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of emploees">
+                    <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">Nature of Business: (please check all relevant natures)</p>
                         <div class="checkbox-list">
                             <div class="container-checkbox">
@@ -89,8 +89,8 @@
                             </div>
                         </div>
                     </div>
-                    <input type="text" class="input questionary-input empty" placeholder="Number of offices (shops)">
-                    <div class="input-checkbox">
+                    <input type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of offices (shops)">
+                    <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">Job Nature: (please check all relevant boxes)</p>
                         <div class="checkbox-list">
                             <div class="container-checkbox">
@@ -111,23 +111,23 @@
 
                         </div>
                     </div>
-                    <div class="input-checkbox">
+                    <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">What kind of goods are you interested in (select all apply)?</p>
                         <div class="checkbox-list">
                             <div class="container-checkbox">
-                                <input type="checkbox" class="input questionary-checkbox empty " placeholder="">Multimedia speaker systems
+                                <input  type="checkbox" class="input questionary-checkbox empty " placeholder="">Multimedia speaker systems
                             </div>
 
                             <div class="container-checkbox">
-                                <input type="checkbox" class="input questionary-checkbox empty " placeholder="">Cables
+                                <input  type="checkbox" class="input questionary-checkbox empty " placeholder="">Cables
                             </div>
 
                             <div class="container-checkbox">
-                                <input type="checkbox" class="input questionary-checkbox empty " placeholder="">Microphones
+                                <input  type="checkbox" class="input questionary-checkbox empty " placeholder="">Microphones
                             </div>
 
                             <div class="container-checkbox">
-                                <input type="checkbox" class="input questionary-checkbox empty " placeholder="">Headphones and headsets
+                                <input   type="checkbox" class="input questionary-checkbox empty " placeholder="">Headphones and headsets
                             </div>
                             <div class="container-checkbox">
                                 <input type="checkbox" class="input questionary-checkbox empty " placeholder="">Uninterruptible Power Supplies
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input-checkbox">
+                    <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">Supplies geography</p>
                         <div class="checkbox-list">
                             <div class="container-checkbox">
@@ -169,7 +169,7 @@
 
                         </div>
                     </div>
-                    <input type="text" class="input questionary-input empty" placeholder="Other contact information: Skype (ICQ, MSN)">
+                    <input type="text" onchange="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Other contact information: Skype (ICQ, MSN)">
                 
                     <div class="form-thanks">
                         <p class="thanks-text">Thank you for contacting us. We will respond to you as soon as possible.</p>
@@ -200,7 +200,7 @@
                         }
                     })
                 </script>
-
+                <script src="js/main.js"></script>
             </div>
         </div>
     </section>

@@ -17,6 +17,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
+.display {
+    display: none;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 10%;
@@ -233,11 +237,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 1.2rem;
     padding: 1rem 2rem;
 }
+.inputs-item {
+    
+    text-align: right;
+}
 
 .inputs-button {
     margin: 2rem 0 0 50%;
     width: 50%;
-
 }
 
 .input::placeholder {
@@ -246,3 +253,60 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 1rem;
 }
 
+.text-error {
+    color: red;
+}
+
+.form-thanks {
+    margin-top: 1rem;
+    background: #a6895c;
+    border-radius: 5px;
+    padding: 1rem 5rem;
+    text-align: center;
+}
+
+.form-thanks--display {
+    border: 1px solid white;
+    max-width: 40%;
+    margin: 2rem auto;
+}
+
+.thanks-text {
+    color: white;
+}
+
+.input-correct {
+    border: none;
+    color: #9E855D;
+}
+
+.input-error {
+    border: 1px solid red;
+    color: red;
+}
+
+.inputs-item:nth-of-type(1) {
+    background: white url(../images/index-input-4.png) no-repeat 5% 50%;
+    background-size: 20%;
+}
+
+.inputs-item:nth-of-type(2) {
+    background: white url(../images/index-input-2.png) no-repeat 5% 50%;
+    background-size: 20%;
+}
+
+.inputs-item:nth-of-type(3) {
+    background: white url(../images/index-input-3.png) no-repeat 5% 50%;
+    background-size: 20%;
+}
+
+.inputs-item:nth-of-type(4) {
+    background: white url(../images/index-input-1.png) no-repeat 5% 50%;
+    background-size: 20%;
+}
+
+.input-text-area {
+    background: white url(../images/index-input-3.png) no-repeat 5% 20%;
+    background-size: 20%;
+    text-align: right;
+}
