@@ -137,3 +137,26 @@
     padding: 1.4rem 1.75rem 1rem 1.75rem;
     background-size: 13%;
 }
+
+@media screen and (max-width: 900px) {
+    .questionary-form {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .form-thanks {
+        padding: 1rem 0.2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .container-checkbox {
+        width: 100%;
+    }
+    .form-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

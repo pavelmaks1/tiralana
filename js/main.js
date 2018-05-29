@@ -72,8 +72,8 @@ const checkCheckboxes = () => {
 
 
 $(function () {
-    checkCheckboxes();  
-    $('input').val('') ;
+    checkCheckboxes();
+    $('input').val('');
     $('textarea').val('');
     $('.iCheck-helper').click(function () {
         checkCheckboxes();
@@ -81,6 +81,35 @@ $(function () {
     })
 })
 
+const onSubmitMain = (event) => {
+    event.preventDefault();
+    isValidText(document.getElementsByClassName('questionary-input')[0]);
+    isValidText(document.getElementsByClassName('questionary-input')[1]);
+    isValidText(document.getElementsByClassName('questionary-input')[2]);
+    isValidText(document.getElementsByClassName('questionary-input')[3]);
+    isValidText(document.getElementsByClassName('questionary-input')[4]);
+    isValidText(document.getElementsByClassName('questionary-input')[5]);
+    isValidText(document.getElementsByClassName('questionary-input')[6]);
+    isValidText(document.getElementsByClassName('questionary-input')[7]);
+    isValidText(document.getElementsByClassName('questionary-input')[8]);
+
+
+
+
+    if (isValidText(document.getElementsByClassName('questionary-input')[0]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[1]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[2]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[3]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[4]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[5]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[6]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[7]) &&
+        isValidText(document.getElementsByClassName('questionary-input')[8]) ) {
+        document.getElementsByClassName('form-thanks')[0].classList.remove('display');
+    } else {
+        document.getElementsByClassName('form-thanks')[0].classList.add('display');
+    }
+}
 
 //////// For Index.html landing page form
 
@@ -104,6 +133,7 @@ const cleanInput = (input) => {
         input.classList.remove('input-error');
     }
 }
+
 
 
 const onSubmit = (event) => {

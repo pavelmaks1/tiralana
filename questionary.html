@@ -39,13 +39,13 @@
         <div class="questionary-main">
             <div class="container">
                 <form action="" class="questionary-form">
-                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Company Name">
-                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Country/Region of Head office">
-                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
-                    <input type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Name">
-                    <input type="text" onchange="isValidTelephoneNumber(this)" class="input questionary-input empty" placeholder="Telephone number">
-                    <input type="text" onchange="isValidDomainName(this)" class="input questionary-input empty" placeholder="Web site">
-                    <input type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of emploees">
+                    <input onclick="cleanInput(this)" type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Company Name">
+                    <input onclick="cleanInput(this)" type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Country/Region of Head office">
+                    <input onclick="cleanInput(this)" type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="State, City, Postal Code, Address">
+                    <input onclick="cleanInput(this)" type="text" onblur="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Name">
+                    <input onclick="cleanInput(this)" type="text" onchange="isValidTelephoneNumber(this)" class="input questionary-input empty" placeholder="Telephone number">
+                    <input onclick="cleanInput(this)" type="text" onchange="isValidDomainName(this)" class="input questionary-input empty" placeholder="Web site">
+                    <input onclick="cleanInput(this)" type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of emploees">
                     <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">Nature of Business: (please check all relevant natures)</p>
                         <div class="checkbox-list">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <input type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of offices (shops)">
+                    <input onclick="cleanInput(this)" type="text" onchange="isNumber(this)" class="input questionary-input empty" placeholder="Number of offices (shops)">
                     <div class="input-checkbox checkbox-group-empty">
                         <p class="input-text">Job Nature: (please check all relevant boxes)</p>
                         <div class="checkbox-list">
@@ -169,13 +169,13 @@
 
                         </div>
                     </div>
-                    <input type="text" onchange="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Other contact information: Skype (ICQ, MSN)">
+                    <input onclick="cleanInput(this)" type="text" onchange="isGreaterThanFour(this)" class="input questionary-input empty" placeholder="Other contact information: Skype (ICQ, MSN)">
 
-                    <div class="form-thanks">
+                    <div class="form-thanks display">
                         <p class="thanks-text">Thank you for contacting us. We will respond to you as soon as possible.</p>
                     </div>
 
-                    <button class="button form-button">Send Details</button>
+                    <button onclick="onSubmitMain(event)" class="button form-button">Send Details</button>
                 </form>
                 <script>
                     $(document).ready(function () {

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tiralana Landing</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -40,7 +41,7 @@
         <div class="container">
             <div class="header-content-low">
                 <h1 class="header-title header-title--grey">Direct deliveries from the manufacturer. The best conditions for cooperation.</h1>
-                <button class="header-low-button">Become a partner</button>
+                <button onclick="window.location.href='questionary.html'" class="header-low-button">Become a partner</button>
             </div>
         </div>
     </section>
@@ -87,20 +88,20 @@
                 </p>
                 <p class="form-contacts">E-mail:</p>
             </div>
+            <p class="text-error display">Please fix the following errors:</p>
             <form class="form-main">
                 <div class="inputs-group">
-                    <p class="text-error display">Please fix the following errors:</p>
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input inputs-item" >
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input inputs-item">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" >
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="email" class="input  inputs-item" >
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="email" class="input  inputs-item">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" >
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item">
 
                 </div>
                 <div class="inputs-group inputs-textarea-group">
-                    <textarea onclick="cleanInput(this)" type="text" onchange="isValidText(this)" class="input input-text-area" ></textarea>
+                    <textarea onclick="cleanInput(this)" type="text" onchange="isValidText(this)" class="input input-text-area"></textarea>
                     <button onclick="onSubmit(event)" class="button inputs-button">Send Message</button>
                 </div>
             </form>

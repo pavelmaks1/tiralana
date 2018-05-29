@@ -237,8 +237,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 1.2rem;
     padding: 1rem 2rem;
 }
+
+.input-text-area {
+    font-size: 1.2rem;
+}
+
 .inputs-item {
-    
     text-align: right;
 }
 
@@ -255,6 +259,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .text-error {
     color: red;
+    margin: 0 2rem;
 }
 
 .form-thanks {
@@ -285,28 +290,96 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: red;
 }
 
+.inputs-item {
+    background-size: 20%;
+}
+
 .inputs-item:nth-of-type(1) {
     background: white url(../images/index-input-4.png) no-repeat 5% 50%;
-    background-size: 20%;
 }
 
 .inputs-item:nth-of-type(2) {
     background: white url(../images/index-input-2.png) no-repeat 5% 50%;
-    background-size: 20%;
 }
 
 .inputs-item:nth-of-type(3) {
     background: white url(../images/index-input-3.png) no-repeat 5% 50%;
-    background-size: 20%;
 }
 
 .inputs-item:nth-of-type(4) {
     background: white url(../images/index-input-1.png) no-repeat 5% 50%;
-    background-size: 20%;
 }
 
 .input-text-area {
     background: white url(../images/index-input-3.png) no-repeat 5% 20%;
-    background-size: 20%;
     text-align: right;
+    padding: 1rem 1rem 2rem 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-title--grey {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .header-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .devices-list {
+        flex-direction: column;
+    }
+    .devices-subtitle-container {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .devices-subinfo {
+        flex-direction: column;
+    }
+    .form-main {
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+    .inputs-item, .input-text-area {
+        padding: 0.75rem 2rem;
+        margin: 0.5rem 0 0 0;
+        font-size: 0.9rem;
+    }
+    .button {
+        font-size: 1rem;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-title {
+        font-size: 1.4rem;
+        max-width: 100%;
+        text-align: center;
+    }
+    .header-content-low {
+        flex-direction: column;
+    }
+    .header-low-button {
+        margin: 1rem 0;
+    }
+    .golden-title {
+        font-size: 1.2rem;
+    }
+    .devices-text {
+        font-size: 1.1rem;
+    }
+    .inputs-group {
+        padding: 0;
+    }
 }
