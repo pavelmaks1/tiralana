@@ -24,7 +24,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .container {
     margin: 0 auto;
     padding: 0 10%;
-    max-width: 1280px;
+    max-width: 1200px;
 }
 
 .header {
@@ -72,6 +72,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 2.3rem;
     font-weight: 100;
     max-width: 55%;
+}
+
+.header-title--rus {
+    max-width: 100%;
 }
 
 .header-img-container {
@@ -126,6 +130,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #a6895c;
 }
 
+.golden-title--rus {
+    font-size: 2rem;
+}
+
 .devices-list {
     display: flex;
     justify-content: space-between;
@@ -141,11 +149,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0 0 2rem 0;
 }
 
+.devices-link {
+    font-family: "MyRiadPro Bold";
+    color: #6796e9;
+}
+
+.devices-link:hover {
+    color: #3463B6;
+}
+
 .devices-text {
     font-family: "MyRiadPro Bold";
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.5;
+}
+
+.devices-text--rus {
+    font-size: 1.5rem;
 }
 
 .devices-subinfo {
@@ -168,6 +189,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 2rem;
 }
 
+.devices-subtitle--rus {
+    font-size: 1.7rem;
+}
+
 .button {
     padding: 1.5rem 1rem;
     border: none;
@@ -177,6 +202,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.button--rus {
+    max-width: 400px;
+    padding: 1rem 2rem;
 }
 
 .devices-button {
@@ -291,6 +321,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .inputs-item {
+    border: 1px solid white;
     background-size: 20%;
 }
 
@@ -311,9 +342,30 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .input-text-area {
+    border: 1px solid white;
     background: white url(../images/index-input-3.png) no-repeat 5% 20%;
     text-align: right;
     padding: 1rem 1rem 2rem 8rem;
+}
+
+.inputs-item--rus:nth-of-type(1) {
+    background: white url(../images/index-input-1-rus.png) no-repeat 5% 50%;
+}
+
+.inputs-item--rus:nth-of-type(2) {
+    background: white url(../images/index-input-3-rus.png) no-repeat 5% 50%;
+}
+
+.inputs-item--rus:nth-of-type(3) {
+    background: white url(../images/index-input-5-rus.png) no-repeat 5% 50%;
+}
+
+.inputs-item--rus:nth-of-type(4) {
+    background: white url(../images/index-input-4-rus.png) no-repeat 5% 50%;
+}
+
+.input-text-area--rus {
+    background: white url(../images/index-input-6-rus.png) no-repeat 5% 20%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -381,5 +433,50 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     .inputs-group {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .text-error {
+        text-align: center;
+    }
+    .inputs-item, .input-text-area {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+    .inputs-item:nth-of-type(1) {
+        background: white url(../images/index-input-4.png) no-repeat 5% 10%;
+    }
+    .inputs-item:nth-of-type(2) {
+        background: white url(../images/index-input-2.png) no-repeat 5% 10%;
+    }
+    .inputs-item:nth-of-type(3) {
+        background: white url(../images/index-input-3.png) no-repeat 5% 10%;
+    }
+    .inputs-item:nth-of-type(4) {
+        background: white url(../images/index-input-1.png) no-repeat 5% 10%;
+    }
+    .input-text-area {
+        background: white url(../images/index-input-3.png) no-repeat 5% 10%;
+    }
+    .form-title {
+        font-size: 1.6rem;
+    }
+    .form-subtitle {
+        font-size: 1.4rem;
+    }
+    .inputs-item--rus:nth-of-type(1) {
+        background: white url(../images/index-input-1-rus.png) no-repeat 5% 10%;
+    }
+    .inputs-item--rus:nth-of-type(2) {
+        background: white url(../images/index-input-3-rus.png) no-repeat 5% 10%;
+    }
+    .inputs-item--rus:nth-of-type(3) {
+        background: white url(../images/index-input-5-rus.png) no-repeat 5% 10%;
+    }
+    .inputs-item--rus:nth-of-type(4) {
+        background: white url(../images/index-input-4-rus.png) no-repeat 5% 10%;
+    }
+    .input-text-area--rus {
+        background: white url(../images/index-input-6-rus.png) no-repeat 5% 10%;
     }
 }
