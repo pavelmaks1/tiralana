@@ -82,7 +82,9 @@ $(function () {
 })
 
 const onSubmitMain = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
+
+
     isValidText(document.getElementsByClassName('questionary-input')[0]);
     isValidText(document.getElementsByClassName('questionary-input')[1]);
     isValidText(document.getElementsByClassName('questionary-input')[2]);
@@ -109,6 +111,8 @@ const onSubmitMain = (event) => {
     } else {
         document.getElementsByClassName('form-thanks')[0].classList.add('display');
     }
+
+
 }
 
 //////// For Index.html landing page form
@@ -156,4 +160,3 @@ const onSubmit = (event) => {
     }
 }
 
-console.log(window.location.href);

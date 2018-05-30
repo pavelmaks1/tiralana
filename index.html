@@ -93,19 +93,19 @@
             <div style="height: 20px;">
                 <p class="text-error display">Please fix the following errors:</p>
             </div>
-            <form class="form-main">
+            <form class="form-main" action="form-index.php"  method="post" target="formDestination" >
                 <div class="inputs-group">
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input inputs-item">
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input inputs-item" name="name">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item">
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" name="company">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="email" class="input  inputs-item">
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="email" class="input  inputs-item" name="email">
 
-                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item">
+                    <input onclick="cleanInput(this)" onchange="isValidText(this)" type="text" class="input  inputs-item" name="telephone">
 
                 </div>
                 <div class="inputs-group inputs-textarea-group">
-                    <textarea onclick="cleanInput(this)" type="text" onchange="isValidText(this)" class="input input-text-area"></textarea>
+                    <textarea onclick="cleanInput(this)" type="text" onchange="isValidText(this)" class="input input-text-area" name="message"></textarea>
                     <button onclick="onSubmit(event)" class="button inputs-button">Send Message</button>
                 </div>
             </form>
@@ -114,7 +114,7 @@
             </div>
         </div>
     </section>
-
+    <iframe name="formDestination" src="form-index.php" class="display"></iframe>
     <script src="js/main.js"></script>
 </body>
 
